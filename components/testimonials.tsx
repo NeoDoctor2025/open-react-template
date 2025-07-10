@@ -188,6 +188,7 @@ export function Testimonial({
         </div>
         
         <p className="text-lg text-slate-700 leading-relaxed before:content-['"'] after:content-['"'] max-w-3xl">
+        <p className="text-lg text-slate-700 leading-relaxed before:content-['\"'] after:content-['\"'] max-w-3xl">
           {children}
         </p>
         
