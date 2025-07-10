@@ -4,259 +4,147 @@ import FooterIllustration from "@/public/images/footer-illustration.svg";
 
 export default function Footer() {
   return (
-    <footer>
+    <footer className="bg-slate-900">
       <div className="relative mx-auto max-w-6xl px-4 sm:px-6">
-        {/* Footer illustration */}
-        <div
-          className="pointer-events-none absolute bottom-0 left-1/2 -z-10 -translate-x-1/2"
-          aria-hidden="true"
-        >
-          <Image
-            className="max-w-none"
-            src={FooterIllustration}
-            width={1076}
-            height={378}
-            alt="Footer illustration"
-          />
-        </div>
-        <div className="grid grid-cols-2 justify-between gap-12 py-8 sm:grid-rows-[auto_auto] md:grid-cols-4 md:grid-rows-[auto_auto] md:py-12 lg:grid-cols-[repeat(4,minmax(0,140px))_1fr] lg:grid-rows-1 xl:gap-20">
+        <div className="grid grid-cols-2 justify-between gap-12 py-8 sm:grid-rows-[auto_auto] md:grid-cols-4 md:grid-rows-[auto_auto] md:py-12 lg:grid-cols-[repeat(3,minmax(0,200px))_1fr] lg:grid-rows-1 xl:gap-20">
           {/* 1st block */}
           <div className="space-y-2">
-            <h3 className="text-sm font-medium text-gray-200">Product</h3>
+            <h3 className="text-sm font-medium text-white">Mentorias</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
-                  href="#0"
+                  className="text-slate-400 transition hover:text-blue-400"
+                  href="#packages"
                 >
-                  Features
+                  Essentials
                 </a>
               </li>
               <li>
                 <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
-                  href="#0"
+                  className="text-slate-400 transition hover:text-blue-400"
+                  href="#packages"
                 >
-                  Integrations
+                  Experience
                 </a>
               </li>
               <li>
                 <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
-                  href="#0"
+                  className="text-slate-400 transition hover:text-blue-400"
+                  href="#packages"
                 >
-                  Pricing &amp; Plans
-                </a>
-              </li>
-              <li>
-                <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
-                  href="#0"
-                >
-                  Changelog
-                </a>
-              </li>
-              <li>
-                <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
-                  href="#0"
-                >
-                  Our method
-                </a>
-              </li>
-              <li>
-                <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
-                  href="#0"
-                >
-                  User policy
+                  At Home
                 </a>
               </li>
             </ul>
           </div>
           {/* 2nd block */}
           <div className="space-y-2">
-            <h3 className="text-sm font-medium text-gray-200">Company</h3>
+            <h3 className="text-sm font-medium text-white">Método</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
-                  href="#0"
+                  className="text-slate-400 transition hover:text-blue-400"
+                  href="#method"
                 >
-                  About us
+                  Anatomia Profunda
                 </a>
               </li>
               <li>
                 <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
-                  href="#0"
+                  className="text-slate-400 transition hover:text-blue-400"
+                  href="#method"
                 >
-                  Diversity &amp; Inclusion
+                  Protocolo Refinado
                 </a>
               </li>
               <li>
                 <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
-                  href="#0"
+                  className="text-slate-400 transition hover:text-blue-400"
+                  href="#method"
                 >
-                  Blog
-                </a>
-              </li>
-              <li>
-                <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
-                  href="#0"
-                >
-                  Careers
-                </a>
-              </li>
-              <li>
-                <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
-                  href="#0"
-                >
-                  Financial statements
+                  Resultados Duradouros
                 </a>
               </li>
             </ul>
           </div>
           {/* 3rd block */}
           <div className="space-y-2">
-            <h3 className="text-sm font-medium text-gray-200">Resources</h3>
+            <h3 className="text-sm font-medium text-white">Suporte</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
-                  href="#0"
+                  className="text-slate-400 transition hover:text-blue-400"
+                  href="https://wa.me/5511999999999"
+                  target="_blank"
                 >
-                  Community
+                  WhatsApp
                 </a>
               </li>
               <li>
                 <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
-                  href="#0"
+                  className="text-slate-400 transition hover:text-blue-400"
+                  href="mailto:contato@deepneckacademy.com"
                 >
-                  Terms of service
+                  Email
                 </a>
               </li>
               <li>
                 <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
-                  href="#0"
+                  className="text-slate-400 transition hover:text-blue-400"
+                  href="tel:+5511999999999"
                 >
-                  Report a vulnerability
+                  Telefone
                 </a>
               </li>
             </ul>
           </div>
           {/* 4th block */}
-          <div className="space-y-2">
-            <h3 className="text-sm font-medium text-gray-200">
-              Content Library
-            </h3>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
-                  href="#0"
-                >
-                  Templates
-                </a>
-              </li>
-              <li>
-                <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
-                  href="#0"
-                >
-                  Tutorials
-                </a>
-              </li>
-              <li>
-                <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
-                  href="#0"
-                >
-                  Knowledge base
-                </a>
-              </li>
-              <li>
-                <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
-                  href="#0"
-                >
-                  Learn
-                </a>
-              </li>
-              <li>
-                <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
-                  href="#0"
-                >
-                  Cookie manager
-                </a>
-              </li>
-            </ul>
-          </div>
-          {/* 5th block */}
           <div className="col-span-2 md:col-span-4 lg:col-span-1 lg:text-right">
             <div className="mb-3">
               <Logo />
+              <span className="ml-3 text-lg font-semibold text-white">Deep Neck Academy</span>
             </div>
             <div className="text-sm">
-              <p className="mb-3 text-indigo-200/65">
-                © Cruip.com
-                <span className="text-gray-700"> · </span>
+              <p className="mb-3 text-slate-400">
+                © 2024 Deep Neck Academy
+                <span className="text-slate-600"> · </span>
                 <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
+                  className="text-slate-400 transition hover:text-blue-400"
                   href="#0"
                 >
-                  Terms
+                  Termos de Uso
                 </a>
               </p>
               <ul className="inline-flex gap-1">
                 <li>
                   <a
-                    className="flex items-center justify-center text-indigo-500 transition hover:text-indigo-400"
+                    className="flex items-center justify-center text-blue-400 transition hover:text-blue-300"
                     href="#0"
-                    aria-label="Twitter"
+                    aria-label="Instagram"
                   >
                     <svg
                       className="h-8 w-8 fill-current"
                       viewBox="0 0 32 32"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <path d="m13.063 9 3.495 4.475L20.601 9h2.454l-5.359 5.931L24 23h-4.938l-3.866-4.893L10.771 23H8.316l5.735-6.342L8 9h5.063Zm-.74 1.347h-1.457l8.875 11.232h1.36l-8.778-11.232Z" />
+                      <path d="M16 8.2c-4.4 0-8 3.6-8 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm0 13c-2.8 0-5-2.2-5-5s2.2-5 5-5 5 2.2 5 5-2.2 5-5 5z"/>
+                      <circle cx="24.3" cy="7.7" r="1.9"/>
+                      <path d="M16 2.9c-3.5 0-3.9 0-5.3.1-1.4.1-2.4.2-3.2.5-.9.3-1.6.8-2.4 1.6-.8.8-1.3 1.5-1.6 2.4-.3.8-.4 1.8-.5 3.2-.1 1.4-.1 1.8-.1 5.3s0 3.9.1 5.3c.1 1.4.2 2.4.5 3.2.3.9.8 1.6 1.6 2.4.8.8 1.5 1.3 2.4 1.6.8.3 1.8.4 3.2.5 1.4.1 1.8.1 5.3.1s3.9 0 5.3-.1c1.4-.1 2.4-.2 3.2-.5.9-.3 1.6-.8 2.4-1.6.8-.8 1.3-1.5 1.6-2.4.3-.8.4-1.8.5-3.2.1-1.4.1-1.8.1-5.3s0-3.9-.1-5.3c-.1-1.4-.2-2.4-.5-3.2-.3-.9-.8-1.6-1.6-2.4-.8-.8-1.5-1.3-2.4-1.6-.8-.3-1.8-.4-3.2-.5-1.4-.1-1.8-.1-5.3-.1zm0 2.2c3.4 0 3.8 0 5.1.1 1.2.1 1.9.2 2.3.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.3 1.1.4 2.3.1 1.3.1 1.7.1 5.1s0 3.8-.1 5.1c-.1 1.2-.2 1.9-.4 2.3-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1.1.3-2.3.4-1.3.1-1.7.1-5.1.1s-3.8 0-5.1-.1c-1.2-.1-1.9-.2-2.3-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.3-1.1-.4-2.3-.1-1.3-.1-1.7-.1-5.1s0-3.8.1-5.1c.1-1.2.2-1.9.4-2.3.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1.1-.3 2.3-.4 1.3-.1 1.7-.1 5.1-.1z"/>
                     </svg>
                   </a>
                 </li>
                 <li>
                   <a
-                    className="flex items-center justify-center text-indigo-500 transition hover:text-indigo-400"
+                    className="flex items-center justify-center text-blue-400 transition hover:text-blue-300"
                     href="#0"
-                    aria-label="Medium"
+                    aria-label="LinkedIn"
                   >
                     <svg
                       className="h-8 w-8 fill-current"
                       viewBox="0 0 32 32"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <path d="M23 8H9a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1Zm-1.708 3.791-.858.823a.251.251 0 0 0-.1.241V18.9a.251.251 0 0 0 .1.241l.838.823v.181h-4.215v-.181l.868-.843c.085-.085.085-.11.085-.241v-4.887l-2.41 6.131h-.329l-2.81-6.13V18.1a.567.567 0 0 0 .156.472l1.129 1.37v.181h-3.2v-.181l1.129-1.37a.547.547 0 0 0 .146-.472v-4.749a.416.416 0 0 0-.138-.351l-1-1.209v-.181H13.8l2.4 5.283 2.122-5.283h2.971l-.001.181Z" />
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="flex items-center justify-center text-indigo-500 transition hover:text-indigo-400"
-                    href="#0"
-                    aria-label="Github"
-                  >
-                    <svg
-                      className="h-8 w-8 fill-current"
-                      viewBox="0 0 32 32"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M16 8.2c-4.4 0-8 3.6-8 8 0 3.5 2.3 6.5 5.5 7.6.4.1.5-.2.5-.4V22c-2.2.5-2.7-1-2.7-1-.4-.9-.9-1.2-.9-1.2-.7-.5.1-.5.1-.5.8.1 1.2.8 1.2.8.7 1.3 1.9.9 2.3.7.1-.5.3-.9.5-1.1-1.8-.2-3.6-.9-3.6-4 0-.9.3-1.6.8-2.1-.1-.2-.4-1 .1-2.1 0 0 .7-.2 2.2.8.6-.2 1.3-.3 2-.3s1.4.1 2 .3c1.5-1 2.2-.8 2.2-.8.4 1.1.2 1.9.1 2.1.5.6.8 1.3.8 2.1 0 3.1-1.9 3.7-3.7 3.9.3.4.6.9.6 1.6v2.2c0 .2.1.5.6.4 3.2-1.1 5.5-4.1 5.5-7.6-.1-4.4-3.7-8-8.1-8z" />
+                      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
                     </svg>
                   </a>
                 </li>

@@ -5,12 +5,13 @@ import Logo from "./logo";
 
 export default function Header() {
   return (
-    <header className="z-30 mt-2 w-full md:mt-5">
+    <header className="z-30 mt-3 w-full md:mt-6">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <div className="relative flex h-14 items-center justify-between gap-3 rounded-2xl bg-gray-900/90 px-3 before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_right,var(--color-gray-800),var(--color-gray-700),var(--color-gray-800))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] after:absolute after:inset-0 after:-z-10 after:backdrop-blur-xs">
+        <div className="relative flex h-14 items-center justify-between gap-3 rounded-2xl bg-white/95 px-3 shadow-lg backdrop-blur-sm border border-slate-200">
           {/* Site branding */}
           <div className="flex flex-1 items-center">
             <Logo />
+            <span className="ml-3 text-lg font-semibold text-slate-800">Deep Neck Academy</span>
           </div>
 
           {/* Desktop sign in links */}
@@ -18,17 +19,17 @@ export default function Header() {
             <li>
               <Link
                 href="/signin"
-                className="btn-sm relative bg-linear-to-b from-gray-800 to-gray-800/60 bg-[length:100%_100%] bg-[bottom] py-[5px] text-gray-300 before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_right,var(--color-gray-800),var(--color-gray-700),var(--color-gray-800))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] hover:bg-[length:100%_150%]"
+                className="btn-sm relative bg-slate-100 hover:bg-slate-200 py-[5px] text-slate-700 border border-slate-300 transition-colors"
               >
-                Sign In
+                Entrar
               </Link>
             </li>
             <li>
               <Link
-                href="/signup"
-                className="btn-sm bg-linear-to-t from-indigo-600 to-indigo-500 bg-[length:100%_100%] bg-[bottom] py-[5px] text-white shadow-[inset_0px_1px_0px_0px_--theme(--color-white/.16)] hover:bg-[length:100%_150%]"
+                href="#packages"
+                className="btn-sm bg-gradient-to-r from-blue-600 to-blue-500 py-[5px] text-white hover:from-blue-700 hover:to-blue-600 transition-all"
               >
-                Register
+                Mentorias
               </Link>
             </li>
           </ul>
